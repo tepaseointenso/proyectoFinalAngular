@@ -1,0 +1,55 @@
+<div id="containerEquipo" class="container-fluid contain">
+    <div class="row fondoTabla justify-content-center align-items-center">
+            <div class="bannerLateral col-lg-6 px-0">
+                    <p class="titulo">Inicio de Sesión</p>
+            </div>
+            <div class="col-lg-6 caja py-3 px-5">
+                <form [formGroup]="formLogin" (ngSubmit)="guardar()">
+                    <div class="mb-3">
+                    <label for="usuario" class="form-label">Nombre de usuario</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="usuario"
+                        formControlName="usuario"
+                        aria-describedby="nombreUsuario"
+                    />
+                    <small
+                        class="text-danger"
+                        *ngIf="
+                        formLogin.get('usuario')!.invalid &&
+                        formLogin.get('usuario')!.touched
+                        "
+                        >Ingrese un nombre de usuario valido</small
+                    >
+                    </div>
+                    <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="password"
+                        formControlName="password"
+                        aria-describedby="passwordUser"
+                    />
+                    <small
+                    class="text-danger"
+                    *ngIf="
+                    formLogin.get('password')!.invalid &&
+                    formLogin.get('password')!.touched"
+                    >Ingrese un nombre valido</small>
+                    </div>
+                    <div class="text-center mt-4 mb-3">
+                        <button
+                        type="submit"
+                        class="btn btn-primary"
+                        [disabled]="!formLogin.valid"
+                        >
+                        Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+</div>
+  

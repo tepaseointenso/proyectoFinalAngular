@@ -1,0 +1,36 @@
+<div id="containerEquipo" class="container-fluid contain">
+        <div class="row fondoTabla justify-content-center align-items-center">
+                <div class="row">
+                        <div class="bannerLateral col-lg-12 px-0 py-5">
+                        <p class="titulo">Listado de Usuarios</p>
+                        </div>
+                </div>
+                <div class="row caja">
+                        <div class="col-lg-12 py-3">                                       
+                                <table class="table">  
+                                        <thead>  
+                                        <tr>  
+                                        <th>Usuario</th>  
+                                        <th>Nombre</th>  
+                                        <th>Apellidos</th>  
+                                        <th>Pais</th>  
+                                        <th>Mail</th>  
+                                        <th>Fono</th>  
+                                        </tr>  
+                                        </thead>  
+                                        <tbody>  
+                                        <tr *ngFor="let usuario of usuarios">  
+                                        <td>{{ usuario.usuario }}</td>  
+                                        <td>{{ usuario.nombre }}</td>  
+                                        <td>{{ usuario.apellidos }}</td>  
+                                        <td>{{ usuario.pais }}</td>  
+                                        <td>{{ usuario.mail }}</td>  
+                                        <td>{{ usuario.fono }}</td>  
+                                        </tr>  
+                                        </tbody>  
+                                </table>  
+                        </div> 
+                </div> 
+        </div>
+</div>
+  

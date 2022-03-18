@@ -1,0 +1,21 @@
+<div id="containerEquipo" class="container-fluid contain">
+        <div class="row fondoTabla justify-content-center align-items-center">
+                <div class="bannerLateral col-lg-4 px-0 py-5">
+                        <p class="titulo">Listado de Usuarios</p>
+                </div>
+                <div class="col-lg-8 caja py-3 px-5">
+                        <div class="row card-group">
+                                <div class="col-6 mb-3"  *ngFor="let usuario of usuarios">
+                                        <div class="card align-items-center">
+                                                <div class="card-body">
+                                                  <h2 class="card-title">{{usuario.usuario}}</h2>
+                                                  <a href="info" class="btn btn-primary">Ver Informacion</a>
+                                                </div>
+                                              </div>
+                                </div>
+                            </div>
+                </div>
+                
+        </div>
+    </div>
+      

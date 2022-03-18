@@ -1,0 +1,34 @@
+[  
+    {  
+        "usuario": "tepaseointenso",
+        "nombre": "Eric",
+        "apellidos": "Trasancos Palmeiro",
+        "pais": "Chile",
+        "mail": "erictrasancosp@gmail.com",
+        "fono": "56954081515"
+    },  
+    {  
+        "usuario": "peter25",
+        "nombre": "Peter",
+        "apellidos": "Martinez Lopez",
+        "pais": "Chile",
+        "mail": "petermartinez@gmail.com",
+        "fono": "56936985241"
+    },  
+    {  
+        "usuario": "carla_perez",
+        "nombre": "Carla",
+        "apellidos": "Perez Ampuero",
+        "pais": "Chile",
+        "mail": "carlita2525@gmail.com",
+        "fono": "56941256333" 
+    },  
+    {  
+        "usuario": "matias2010",
+        "nombre": "Matias",
+        "apellidos": "Olivera Guerra",
+        "pais": "Chile",
+        "mail": "matiguerra@gmail.com",
+        "fono": "56987450214"
+    }
+  ]  
