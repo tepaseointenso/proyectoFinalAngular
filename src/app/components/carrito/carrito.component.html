@@ -3,8 +3,28 @@
             <div class="bannerLateral col-lg-6 px-0 py-5">
                     <p class="titulo">Carrito</p>
             </div>
-            <div class="col-lg-6 caja py-3 px-5">
-                Sitio en Construccion
+            <div class="col-lg-6 caja py-3 px-3" #mostrar>
+                <h5>Estos botones sacan la informacion de una API publica</h5>
+                <div class="row my-5">
+                    <div *ngFor="let item of nombreCrypto" class="col-6 my-2">
+                        <a [routerLink]="['/carrito', item.Asset]">
+                            <button class="btn btn-primary">Cargar parametro {{item.Asset}}</button>
+                        </a>
+                    </div>
+                </div>
+                    <ng-template [ngIf]="parametro" [ngIfElse]="vacio">
+                        <div>
+                          <h2>La URL contiene el parametro {{parametro}}</h2>
+                        </div>
+                      </ng-template>
+                      
+                      <ng-template #vacio>
+                        <div>
+                          <h2>La URL no contiene ningun parametro.</h2>
+                        </div>
+                      </ng-template>
+                      <p id="parametroActual"></p>
+
             </div>
     </div>
 </div>

@@ -5,5 +5,6 @@ export interface Usuario {
     pais: string;
     mail: string;
     fono: string;
+    password: string;
   }
   

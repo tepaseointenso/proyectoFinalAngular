@@ -5,7 +5,8 @@
         "apellidos": "Trasancos Palmeiro",
         "pais": "Chile",
         "mail": "erictrasancosp@gmail.com",
-        "fono": "56954081515"
+        "fono": "56954081515",
+        "password": "clave123"
     },  
     {  
         "usuario": "peter25",
@@ -13,7 +14,8 @@
         "apellidos": "Martinez Lopez",
         "pais": "Chile",
         "mail": "petermartinez@gmail.com",
-        "fono": "56936985241"
+        "fono": "56936985241",
+        "password": "clave123"
     },  
     {  
         "usuario": "carla_perez",
@@ -21,7 +23,8 @@
         "apellidos": "Perez Ampuero",
         "pais": "Chile",
         "mail": "carlita2525@gmail.com",
-        "fono": "56941256333" 
+        "fono": "56941256333",
+        "password": "clave123" 
     },  
     {  
         "usuario": "matias2010",
@@ -29,6 +32,7 @@
         "apellidos": "Olivera Guerra",
         "pais": "Chile",
         "mail": "matiguerra@gmail.com",
-        "fono": "56987450214"
+        "fono": "56987450214",
+        "password": "clave123"
     }
   ]  

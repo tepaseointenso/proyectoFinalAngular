@@ -21,7 +21,8 @@ export class LoginComponent implements OnInit {
     apellidos: 'Trasancos Palmeiro',
     pais: 'Chile',
     mail: 'erictrasancosp@gmail.com',
-    fono: '56954081515'
+    fono: '56954081515',
+    password: 'clave123'
   };
 
   formLogin!: FormGroup;
@@ -29,7 +30,7 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder) {
     this.formLogin = this.fb.group({
       usuario: [this.usuario.usuario, Validators.required],
-      nombre: [this.usuario.nombre,[Validators.required, Validators.minLength(2)],]
+      password: [this.usuario.password,[Validators.required, Validators.minLength(2)],]
     });
   }
 

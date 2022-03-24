@@ -8,8 +8,10 @@ import { LoginComponent } from './components/login/login.component';
 import { ListadoComponent } from './components/listado/listado.component';
 import { InfoComponent } from './components/info/info.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,15 +25,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     NgbModule,
-    ReactiveFormsModule, 
-    RouterModule.forRoot([
-      {path: 'registro', component: RegistroComponent},
-      {path: 'login', component: LoginComponent},
-      {path: 'listado', component: ListadoComponent},
-      {path: 'info', component: InfoComponent},
-      {path: 'carrito', component: CarritoComponent},
-    ]),
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

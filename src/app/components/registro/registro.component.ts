@@ -20,7 +20,8 @@ export class RegistroComponent implements OnInit {
     apellidos: 'Trasancos Palmeiro',
     pais: 'Chile',
     mail: 'erictrasancosp@gmail.com',
-    fono: '56954081515'
+    fono: '56954081515',
+    password: 'clave123'
   };
 
   usuarioForm!: FormGroup;
@@ -41,6 +42,7 @@ export class RegistroComponent implements OnInit {
 
   guardar() {
     console.log(this.usuarioForm.value);
+    alert("Formulario enviado correctamente");
   }
 
   //VALIDACION TELEFONO
